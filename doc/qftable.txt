@@ -1,0 +1,95 @@
+*qftable.txt*	Plugin to show quickfix list in table
+*qftable*
+
+Author: kyoh86 <me@kyoh86.dev>
+License: MIT License
+
+
+==============================================================================
+                                                            *qftable-contents*
+Contents ~
+
+Function                                         |qftable-function|
+Command                                          |qftable-command|
+
+
+==============================================================================
+                                                            *qftable-function*
+Function ~
+
+qftable#show({opts})
+    Show quickfix list in table
+    {opts} is a dictionary to specify options.
+
+    Available options are:
+
+    - `columns`
+        List of columns to show.
+          (default: ['bufnr', 'lnum', 'text'])
+
+        Available columns are:
+        - `bufnr`
+            Number of buffer that has the file name, use |bufname()|
+            to get the name
+        - `module`
+            Module name
+        - `lnum`
+            Line number in the buffer (first line is 1)
+        - `end_lnum`
+            End of line number if the item is multiline
+        - `col`
+            Column number (first column is 1)
+        - `end_col`
+            End of column number if the item has range
+        - `vcol`
+            "yes": "col" is visual column
+            "": "col" is byte index
+        - `nr`
+            Error number
+        - `pattern`
+            Search pattern used to locate the error
+        - `text`
+            Description of the error
+        - `type`
+            Type of the error, 'E', '1', etc.
+        - `valid`
+            "yes": recognized error message
+
+    - `printer`
+        Where to print the table.
+          (default: `hnew`)
+        Available printers are:
+        - `cur`
+            Print table at the cursor position
+        - `hnew`
+            Print table in new horizontal window
+        - `vnew`
+            Print table in new vertical window
+        - `reg`
+            Print table in the register
+
+    - `formatter`
+        Formatter of the table.
+          (default: `markdown`)
+        Now available formatter is only `markdown`.
+
+
+==============================================================================
+                                                             *qftable-command*
+Command ~
+
+:QFTable [{flags}]
+    Show quickfix list in table
+    {opts} is flags to specify options.
+
+    Available flags are same as |qftable#show()|:
+        --column=<column> --column=<column> ...
+            List of columns to show.
+        --printer=<printer>
+            Where to print the table.
+        --formatter=<formatter>
+            Formatter of the table.
+
+
+==============================================================================
+" vim:tw=78:nosi:sts=4:ts=4:sw=4:et:ft=help:norl:
