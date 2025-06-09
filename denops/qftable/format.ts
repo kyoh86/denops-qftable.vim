@@ -1,4 +1,4 @@
-import type { Denops } from "jsr:@denops/std@7.5.0";
+import type { Denops } from "jsr:@denops/std@7.5.1";
 import type { QfColumn } from "./column.ts";
 import type { Printer } from "./printer.ts";
 
