@@ -1,4 +1,4 @@
-import type { Flags } from "jsr:@denops/std@7.5.0/argument";
+import type { Flags } from "jsr:@denops/std@7.5.1/argument";
 
 export function getFlagValue(flags: Flags, key: string): string | undefined {
   if (!(key in flags)) {

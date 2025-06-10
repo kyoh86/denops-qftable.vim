@@ -1,5 +1,5 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
     "jsr:@core/unknownutil@4": "4.3.0",
     "jsr:@core/unknownutil@4.3": "4.3.0",
@@ -10,6 +10,7 @@
     "jsr:@denops/std@7.4": "7.4.0",
     "jsr:@denops/std@7.4.0": "7.4.0",
     "jsr:@denops/std@7.5.0": "7.5.0",
+    "jsr:@denops/std@7.5.1": "7.5.1",
     "jsr:@kyoh86/denops-router@0.4": "0.4.2",
     "jsr:@lambdalisue/itertools@^1.1.2": "1.1.2",
     "jsr:@lambdalisue/unreachable@^1.0.1": "1.0.1",
@@ -48,6 +49,15 @@
     },
     "@denops/std@7.5.0": {
       "integrity": "22d41172f1f5c91265a5555c1aecd63263176c6c65b4fb7c2b1a585ecb79a554",
+      "dependencies": [
+        "jsr:@core/unknownutil@^4.3.0",
+        "jsr:@denops/core",
+        "jsr:@std/semver",
+        "jsr:@std/ulid"
+      ]
+    },
+    "@denops/std@7.5.1": {
+      "integrity": "ddf3ed8ba0da876584dfa6aa893e88d735db507483788cdb002d7164a8943c3c",
       "dependencies": [
         "jsr:@core/unknownutil@^4.3.0",
         "jsr:@denops/core",
