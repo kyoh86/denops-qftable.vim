@@ -1,5 +1,5 @@
-import type { Denops } from "jsr:@denops/std@7.6.0";
-import { parse } from "jsr:@denops/std@7.6.0/argument";
+import type { Denops } from "jsr:@denops/std@8.0.0";
+import { parse } from "jsr:@denops/std@8.0.0/argument";
 import { ensure, is } from "jsr:@core/unknownutil@4.3.0";
 
 import { getFlagValue, getFlagValues } from "./flag.ts";
