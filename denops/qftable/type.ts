@@ -1,4 +1,4 @@
-import { is, type Predicate } from "jsr:@core/unknownutil@4.3.0";
+import { is, type Predicate } from "@core/unknownutil";
 
 export type QfItem = {
   bufnr: number;

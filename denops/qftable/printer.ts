@@ -1,5 +1,5 @@
-import type { Denops } from "jsr:@denops/std@8.0.0";
-import * as fn from "jsr:@denops/std@8.0.0/function";
+import type { Denops } from "@denops/std";
+import * as fn from "@denops/std/function";
 
 export interface Printer {
   open(denops: Denops): Promise<void>;

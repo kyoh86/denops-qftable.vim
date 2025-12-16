@@ -1,6 +1,6 @@
-import * as fn from "jsr:@denops/std@8.0.0/function";
-import type { Denops } from "jsr:@denops/std@8.0.0";
-import { ensure, is } from "jsr:@core/unknownutil@^4.3.0";
+import * as fn from "@denops/std/function";
+import type { Denops } from "@denops/std";
+import { ensure, is } from "@core/unknownutil";
 
 import { isQfItem } from "./type.ts";
 
